@@ -182,7 +182,7 @@ footer {
 
 footer p {
   margin: 0; 
-  flex-grow: 1; /* Faz o texto ocupar o espaço central */
+  flex-grow: 1;
   text-align: center;
 }
 
@@ -299,4 +299,12 @@ input::placeholder, textarea::placeholder {
 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
+}
+
+:root {
+  --azul-ford: #1b357e;
+  --azul-hover: #2b5bde;
+  --cinza-fundo: #dee2e6;
+  --cinza-card: #e2e2e2;
+  --fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
