@@ -80,11 +80,13 @@ body {
 
 .box-texto {
   background-color: #1b357e;
-  padding: 50px;
-  max-width: 700px;
-  max-height: 315px;
-  margin-right: 50px;
-  width: 100%;
+  padding: 30px;
+  width: 100%; 
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -224,4 +226,38 @@ footer p {
   font-weight: bold;
   background-color: #1b357e;
   color: #f8f9fa;
+}
+
+:root {
+  --azul-ford: #1b357e;
+  --azul-hover: #2b5bde;
+  --cinza-fundo: #dee2e6;
+  --cinza-card: #e2e2e2;
+  --fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.secao-titulo-pagina {
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 40px;
+}
+
+.titulo-principal {
+  color: #1b357e;
+  font-weight: 700;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.linha-decorativa {
+  width: 100px;
+  height: 4px;
+  background-color: #1b357e;
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.row.align-items-stretch {
+  display: flex;
 }
