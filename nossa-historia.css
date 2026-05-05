@@ -13,18 +13,8 @@ body {
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #dee2e6;
+  background-color: #dee2e6 !important;
 
-}
-
-.topo {
-  background-color: #1a347e;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  padding: 15px 20px;
 }
 
 .menu a {
@@ -43,8 +33,39 @@ body {
 
 
 .menu {
+  background-color: #1b357e;
+  padding: 10px 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
   display: flex;
   gap: 15px;
+}
+
+.nav-menu a {
+  color: #ffffff;
+    text-decoration: none;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 16px; 
+    letter-spacing: normal;
+    transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  opacity: 0.7;
+  color: #978e8e;
+}
+
+.img-menu {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin-left: 0;
 }
 
 .nossa-historia {
@@ -289,28 +310,4 @@ footer p {
 
 .img-menu:hover {
     transform: scale(1.05);
-}
-
-.topo {
-    background-color: var(--azul-ford);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 40px;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 30px;
-}
-
-.nav-menu a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.nav-menu a:hover {
-    color: #978e8e;
 }
