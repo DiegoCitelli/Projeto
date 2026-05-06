@@ -10,21 +10,12 @@ html {
 
 body {
   display: flex;
+  padding-top: 70px;
   flex-direction: column;
   min-height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #dee2e6 !important;
 
-}
-
-.menu a {
-  color: white;
-  text-decoration: none;
-
-  margin-left: 15px;
-  font-weight: bold;
-
-  transition: 0.3s;
 }
 
 .menu a:hover {
@@ -39,21 +30,26 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .nav-menu {
   display: flex;
-  gap: 15px;
+  gap: 30px;
 }
 
 .nav-menu a {
   color: #ffffff;
-    text-decoration: none;
-    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    font-size: 16px; 
-    letter-spacing: normal;
-    transition: 0.3s;
+  text-decoration: none;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 16px; 
+  letter-spacing: normal;
+  transition: 0.3s;
+  margin-left: 0;
 }
 
 .nav-menu a:hover {
