@@ -6,6 +6,7 @@
 
 html, body {
   min-height: 100vh;
+  padding-top: 35px;
   background-color: #dee2e6 !important;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
@@ -18,6 +19,10 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 .nav-menu {
   display: flex;
@@ -39,8 +44,8 @@ html, body {
 
 .secao-titulo-pagina {
   text-align: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .titulo-principal {
@@ -215,7 +220,6 @@ footer p {
   margin: 20px;
   border-radius: 50px;
   padding-bottom: 3px;
-
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s, box-shadow 0.3s;
 }
