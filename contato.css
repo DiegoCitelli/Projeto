@@ -51,7 +51,6 @@ body {
 
 .header-ford {
   background-color: #10336b;
-  /* Azul Ford */
   display: flex;
   justify-content: space-between;
   align-items: center;
