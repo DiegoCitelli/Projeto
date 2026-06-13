@@ -1,49 +1,40 @@
-/*  let dados =  [ 
-    id: ,
-    nome: ,
-    sobrenome: ,
-    assunto: ,
-    mensagem: 
-    
-] */
-
 const form = document.getElementById("formContato");
+const toast = document.getElementById("toast");
 
 form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-    event.preventDefault();
+  const nome = document.getElementById("nome").value;
+  const sobrenome = document.getElementById("sobrenome").value;
+  const email = document.getElementById("email").value;
+  const assunto = document.getElementById("assunto").value;
+  const mensagem = document.getElementById("mensagem").value;
 
-    const nome =
-        document.getElementById("nome").value;
+  const dados = {
+    nome,
+    sobrenome,
+    email,
+    assunto,
+    mensagem,
+  };
 
-    const email =
-        document.getElementById("email").value;
+  localStorage.setItem("dadosContato", JSON.stringify(dados));
 
-    localStorage.setItem("nome", nome);
-    localStorage.setItem("email", email);
+  form.reset();
 
-    form.reset();
+  toast.classList.add("show");
 
-    // Toast
-    toast.classList.add("show");
-
-    setTimeout(() => {
-        toast.classList.remove("show");
-    }, 3000);
-
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3000);
 });
 
-const toast =
-    document.getElementById("toast");
+window.history.scrollRestoration = "manual";
 
-        window.history.scrollRestoration = "manual";
-
-    window.onload = () => {
-        window.scrollTo(0, 0);
-    };
-
-
+window.onload = () => {
+  window.scrollTo(0, 0);
+};
 
 window.onbeforeunload = () => {
-    window.scrollTo(0, 0);
+  window.scrollTo(0, 0);
 };

@@ -12,6 +12,14 @@ body {
   background-color: #dee2e6 !important;
 }
 
+.fundo {
+  flex: 1;
+}
+
+footer {
+  margin-top: auto;
+}
+
 .main-content {
   background-color: #dee2e6;
 }
@@ -65,7 +73,6 @@ body {
   color: white;
   font-size: 22px;
 }
-
 
 .title {
   background-color: #10336b;
@@ -186,7 +193,7 @@ footer {
 }
 
 footer p {
-  margin: 0; 
+  margin: 0;
   flex-grow: 1;
   text-align: center;
 }
@@ -216,7 +223,7 @@ footer p {
   background-color: #1b357e;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
   max-width: 600px;
   margin: 0 auto 50px auto;
   display: grid; /* Mudança para Grid */
@@ -229,11 +236,15 @@ footer p {
   flex-direction: column;
 }
 
-.email-group, .assunto-group, .message-group, .btn-group {
+.email-group,
+.assunto-group,
+.message-group,
+.btn-group {
   grid-column: span 2;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100% !important;
   background-color: #f8f9fa !important;
   border: 2px solid #dee2e6 !important;
@@ -243,14 +254,16 @@ input, textarea {
   margin: 0 !important;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
   outline: none;
   border-color: #1b357e !important;
   background-color: #fff !important;
   box-shadow: 0 0 8px rgba(27, 53, 126, 0.2);
 }
 
-input::placeholder, textarea::placeholder {
+input::placeholder,
+textarea::placeholder {
   color: #adb5bd;
 }
 
@@ -303,7 +316,9 @@ input::placeholder, textarea::placeholder {
   padding-bottom: 3px;
 
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s, box-shadow 0.3s;
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
 }
 
 :root {
@@ -312,4 +327,43 @@ input::placeholder, textarea::placeholder {
   --cinza-fundo: #dee2e6;
   --cinza-card: #e2e2e2;
   --fonte-principal: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.toast-custom {
+  position: fixed;
+  top: 90px;
+  right: 20px;
+
+  background-color: #198754;
+  color: white;
+
+  padding: 15px 20px;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  font-family: var(--fonte-principal);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateX(100px);
+
+  transition: all 0.3s ease;
+
+  z-index: 9999;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.25);
+}
+
+.toast-custom.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.toast-custom i {
+  font-size: 1.2rem;
 }
